@@ -1,0 +1,24 @@
+<!-- Author: Alicia Wang -->
+
+<!doctype html>
+<html>
+<head>
+	<meta charset="utf-8"/>
+	<title>it's raining!?</title>
+	<link rel="stylesheet" href="canvas_project.css"/>
+	<script type="text/javascript" src="canvas_project_background.js"></script>
+	<script type="text/javascript" src="canvas_project_raindrop.js"></script>
+</head>
+<body onload="init();">
+	<h2>oh god it's raining: by alicia wang</h2>
+	<p>click to make it pour</p>
+	<p class="display">
+		<canvas width="800" height="500" id="drawPanel">Update your browser :-(</canvas>
+	</p>
+	<p class="display">
+		<input type="range" min="0" max="50" id="num" onchange="update(numSlider.value)"/>
+	</p>
+
+	<p class="display">rain level: <span id="level">25</span></p>
+</body>
+</html>
